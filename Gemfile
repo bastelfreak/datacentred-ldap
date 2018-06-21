@@ -2,18 +2,18 @@ source "https://rubygems.org"
 
 group :test do
   gem 'rake'
-  gem 'puppet', ENV['PUPPET_VERSION'] || '~> 4.2.0'
+  gem 'puppet', '~> 5.3.7'
   gem 'rspec-puppet'
   gem 'puppetlabs_spec_helper'
   gem 'metadata-json-lint'
-  gem 'rspec-puppet-facts'
+  gem 'rspec-puppet-facts', '>= 1.1.0'
 end
 
 group :development do
   gem 'travis'
   gem 'travis-lint'
   gem 'vagrant-wrapper'
-  gem 'puppet-blacksmith'
+  gem 'puppet-blacksmith', '>= 3.3.1'
   gem 'guard-rake'
 end
 
