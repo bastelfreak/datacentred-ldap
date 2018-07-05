@@ -10,11 +10,11 @@ group :test do
 end
 
 group :development do
-  gem 'travis'
+  gem 'travis', '>= 1.8.0'
   gem 'travis-lint'
   gem 'vagrant-wrapper'
   gem 'puppet-blacksmith'
-  gem 'guard-rake'
+  gem 'guard-rake', '>= 1.0.0'
 end
 
 group :system_tests do
