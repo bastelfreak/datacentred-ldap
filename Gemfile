@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
 group :test do
-  gem 'rake'
+  gem 'rake', '>= 12.3.3'
   gem 'puppet', ENV['PUPPET_VERSION'] || '~> 4.2.0'
   gem 'rspec-puppet'
-  gem 'puppetlabs_spec_helper'
+  gem 'puppetlabs_spec_helper', '>= 0.10.3'
   gem 'metadata-json-lint'
   gem 'rspec-puppet-facts'
 end
@@ -14,12 +14,12 @@ group :development do
   gem 'travis-lint'
   gem 'vagrant-wrapper'
   gem 'puppet-blacksmith'
-  gem 'guard-rake'
+  gem 'guard-rake', '>= 1.0.0'
 end
 
 group :system_tests do
-  gem 'beaker'
-  gem 'beaker-rspec'
+  gem 'beaker', '>= 2.23.0'
+  gem 'beaker-rspec', '>= 5.2.2'
 end
 
 # Constrain the net-ldap gem on ruby 1.9.3 systems
