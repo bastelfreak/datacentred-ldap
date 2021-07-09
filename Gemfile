@@ -10,7 +10,7 @@ group :test do
 end
 
 group :development do
-  gem 'travis'
+  gem 'travis', '>= 1.8.0'
   gem 'travis-lint'
   gem 'vagrant-wrapper'
   gem 'puppet-blacksmith'
@@ -18,8 +18,8 @@ group :development do
 end
 
 group :system_tests do
-  gem 'beaker'
-  gem 'beaker-rspec'
+  gem 'beaker', '>= 2.23.0'
+  gem 'beaker-rspec', '>= 5.2.2'
 end
 
 # Constrain the net-ldap gem on ruby 1.9.3 systems
